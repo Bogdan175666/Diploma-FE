@@ -1,9 +1,10 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+import {LoginModule} from '../pages/login/login.module';
+import {RegisterModule} from '../pages/register/register.module';
 
 @NgModule({
   declarations: [
@@ -11,7 +12,9 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    LoginModule,
+    RegisterModule
   ],
   providers: [
     provideAnimationsAsync()
